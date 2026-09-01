@@ -1,0 +1,28 @@
+{
+  "data_commit": "6d68e2acaad8d074134a7f3d843278649774d661",
+  "outer_protocol": "V1 source-study-held-out",
+  "outer_fold": 0,
+  "n_train_rows": 1298,
+  "n_test_rows": 145,
+  "n_train_studies": 69,
+  "n_test_studies": 5,
+  "heldout_source_ids": [
+    "14",
+    "24",
+    "52",
+    "9",
+    "Runbo data"
+  ],
+  "target": "log10(depth of meltpool)",
+  "feature_set": "F3",
+  "model": "XGBoost",
+  "best_params": {
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "subsample": 0.8
+  },
+  "inner_grouped_MAE_log10": 0.24430309145665707,
+  "heldout_R2_log10": 0.25395613456744615,
+  "heldout_MAE_log10": 0.2511741598636195,
+  "interpretation": "Post-hoc physical-consistency check only; SHAP does not establish causality or exclude source-specific confounding."
+}
