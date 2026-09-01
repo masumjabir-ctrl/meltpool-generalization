@@ -1,0 +1,28 @@
+Paper 4 final-validation audit
+================================
+
+Eagar–Tsai raw-unit correction:
+- et_depth_fast returns depth in metres.
+- Previous final-validation output stored it as if it were micrometres.
+- Corrected by multiplying raw depth by 1e6 before log10 comparison.
+- Corrected raw E-T R2: V0=-0.696, V1=-0.696, V2=-0.716.
+- Median measured/raw-E-T depth ratio: 2.59.
+- Fold-calibrated E-T, RF, XGBoost, bootstrap CIs, and sensitivity R2 are unchanged by the constant unit shift.
+
+Classification LOSO:
+- macro-F1=0.424
+- 95% source-bootstrap CI=[0.350, 0.514]
+
+Corrected process-map outside-domain fractions:
+- Ti-6Al-4V: 55.9%
+- SS316L: 62.6%
+- IN718: 82.8%
+
+Material-specific melting-temperature flags: 98 rows.
+E-T sensitivity, calibrated V1 R2 range: 0.239 to 0.300.
+
+Manuscript implications:
+- Replace the old Table 10 values with the audited final-validation values.
+- Keep raw and calibrated E-T explicitly separate.
+- Describe the process-map grid as the 5th–95th percentile power/velocity envelope, not the full observed envelope.
+- Add LOSO classification as a robustness analysis; it supports the existing grouped result.
