@@ -115,4 +115,8 @@ Augusta University, Augusta, GA 30912, USA
 
 Citation metadata are provided in `CITATION.cff`.
 
-A permanent Zenodo DOI for version `v1.0.0` will be added here after the archived software release is created.
+The reproducibility package corresponding to this manuscript is permanently archived in Zenodo:
+
+**Version v1.0.0 — DOI: 10.5281/zenodo.22225456**
+
+https://doi.org/10.5281/zenodo.22225456
